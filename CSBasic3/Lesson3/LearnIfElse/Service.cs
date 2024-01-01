@@ -31,5 +31,25 @@ namespace LearnIfElse
             return result;
         }
 
+
+        public string EvaluateNumber(double score)
+        {
+            string result = "";
+            if (score > 0)
+            {
+                result = "So duong";
+            }
+
+            if (score < 0)
+            {
+                result = "So am";
+            }
+
+            if (score == 0)
+            {
+                result = "So 0";
+            }
+            return result;
+        }
     }
 }
