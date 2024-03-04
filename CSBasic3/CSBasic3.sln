@@ -5,7 +5,13 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson1", "Lesson1", "{A710521F-E030-4BAA-B7BA-F4170B865056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "Lesson1\ConsoleApp1\ConsoleApp1.csproj", "{6A95F73B-7AF6-495C-851C-525C318FB388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "Lesson1\ConsoleApp1\ConsoleApp1.csproj", "{6A95F73B-7AF6-495C-851C-525C318FB388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson12", "Lesson12", "{14808E57-8C04-41EB-BDC5-CEBBB02B951B}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson12\data.xlsm = Lesson12\data.xlsm
+		Lesson12\kieu-du-lieu.pptx = Lesson12\kieu-du-lieu.pptx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
