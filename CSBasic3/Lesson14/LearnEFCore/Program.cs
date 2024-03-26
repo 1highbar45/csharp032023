@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using LearnEFCore.Majors;
+
+var manager = new MajorManager();
+
+manager.ManageMajor();
+
+Console.ReadKey();
