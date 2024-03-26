@@ -53,7 +53,14 @@ namespace FirstDemo.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+		public IActionResult Delete(Guid majorId)
+		{
+			_majorService.DeleteMajor(majorId);
+			return RedirectToAction("Index", "Home");
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }

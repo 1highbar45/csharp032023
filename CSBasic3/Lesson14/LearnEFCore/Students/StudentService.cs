@@ -74,31 +74,10 @@ namespace LearnEFCore.Students
 
         public StudentViewModel? GetStudentById(Guid studentId)
         {
-            var student = _context.Students.FirstOrDefault(s => s.Id == studentId);
-            if (student == null)
-            {
-                return null;
-            }
-            else
-            {
-                var studentViewModel = from s in _context.Students
-                                       join m in _context.Majors
-                                       on s.MajorId equals m.Id
-                                       select new StudentViewModel
-                                       {
-                                           Id = s.Id,
-                                           StudentName = s.StudentName,
-                                           Age = s.Age,
-                                           Address = s.Address,
-                                           StatusName = s.Status.ToString(),
-                                           MajorName = m.MajorName
-                                       };
-                var result = studentViewModel.ToList();
-                return result;
-            }
-        }
+			throw new NotImplementedException();
+		}
 
-        public void UpdateStudent(UpdateStudentViewModel model)
+		public void UpdateStudent(UpdateStudentViewModel model)
         {
             throw new NotImplementedException();
         }
